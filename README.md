@@ -79,8 +79,6 @@ PhoneNumber::make('Phone Number')
     ->onlyCustomFormats(),
 ```
 
-
-
 ### Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
@@ -95,6 +93,7 @@ If you've found a bug regarding security please mail [contact@yieldstudio.fr](ma
 
 ## Credits
 
+- [James Hemery](https://github.com/jameshemery)
 - [Gustavo Bissolli](https://github.com/bissolli)
 - Special thanks to [Robin Herbots](https://github.com/RobinHerbots) who built one of the best [InputMask](https://github.com/RobinHerbots/Inputmask) from the internet.
 

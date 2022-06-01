@@ -1,7 +1,6 @@
 # A global Phone Number field for Laravel Nova
 
 [![Latest Version](https://img.shields.io/github/release/yieldstudio/nove-phone-field.svg?style=flat-square)](https://github.com/yieldstudio/nove-phone-field/releases)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/yieldstudio/nove-phone-field/run-tests?label=tests)
 [![Total Downloads](https://img.shields.io/packagist/dt/yieldstudio/nove-phone-field.svg?style=flat-square)](https://packagist.org/packages/yieldstudio/nove-phone-field)
 
 Nova Phone Number field with a dynamic mask based on the country code inserted by the user.

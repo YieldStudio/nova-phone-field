@@ -573,7 +573,7 @@
 		"country": "France",
 		"country_code": "FR",
 		"description": "",
-		"mask": "+33 (###) ###-###"
+		"mask": "+33 # ## ## ## ##"
 	},
 	{
 		"country": "French Polynesia",

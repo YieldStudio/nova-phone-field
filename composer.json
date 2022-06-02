@@ -2,6 +2,7 @@
     "name": "yieldstudio/nova-phone-field",
     "description": "Nova Phone Number field with a dynamic mask based on the country code inserted by the user.",
     "keywords": [
+        "yieldstudio",
         "laravel",
         "nova",
         "phone mask",
@@ -13,11 +14,13 @@
         {
             "name": "Gustavo Bissolli",
             "email": "gustavo.bissolli@gmail.com",
+            "homepage": "https://github.com/bissolli",
             "role": "Creator"
         },
         {
-            "name": "Yield Studio",
-            "email": "contact@yieldstudio.fr",
+            "name": "James Hemery",
+            "email": "james@yieldstudio.fr",
+            "homepage": "https://yieldstudio.fr",
             "role": "Fork maintener"
         }
     ],

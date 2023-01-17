@@ -29,4 +29,11 @@ class PhoneNumber extends Field
             'onlyCustomFormats' => true,
         ]);
     }
+
+    public function copyable(): self
+    {
+        return $this->withMeta([
+            'copyable' => true,
+        ]);
+    }
 }

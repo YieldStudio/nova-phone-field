@@ -1,10 +1,17 @@
 <template>
     <PanelItem :field="field">
         <template #value>
-            <a :href="`tel:+${unmaskedValue}`" v-if="field.value" class="no-underline text-primary">
+            <CopyButton
+                        v-if="field.value && field.copyable && !shouldDisplayAsHtml"
+                        v-tooltip="__('Copy to clipboard')"
+                        @click.prevent.stop="copy"
+                    >
+                    <a :href="`tel:+${unmaskedValue}`" v-if="field.value" class="no-underline text-primary">
                 {{ field.value }}
             </a>
             <p v-else>&mdash;</p>
+                    </CopyButton>
+            
         </template>
     </PanelItem>
 </template>

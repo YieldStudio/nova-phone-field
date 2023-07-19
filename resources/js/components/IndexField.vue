@@ -24,7 +24,11 @@ export default {
     computed: {
         phoneNumber(){
             if(this.field.value){
-                return parsePhoneNumber(this.field.value);
+                try {
+                    return parsePhoneNumber(this.field.value);
+                } catch (e) {
+                    return null;
+                }
             }
 
             return null;

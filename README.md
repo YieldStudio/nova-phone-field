@@ -7,7 +7,7 @@ Nova Phone Number field with a dynamic mask based on the country code inserted b
 
 Fork from [bissolli/nova-phone-field](https://github.com/bissolli/nova-phone-field) to maintain package.
 
-![screenshot of the phone field](https://raw.githubusercontent.com/yieldstudio/nova-phone-field/main/screenshot.gif)
+![screenshot of the phone field](https://raw.githubusercontent.com/YieldStudio/nova-phone-field/main/screenshot.gif)
 
 ## Requirements
 

@@ -1,12 +1,17 @@
 <?php
 
+declare(strict_types=1);
+
 namespace YieldStudio\NovaPhoneField;
 
 use Illuminate\Support\Arr;
 use Laravel\Nova\Fields\Field;
+use Laravel\Nova\Fields\SupportsDependentFields;
 
 class PhoneNumber extends Field
 {
+    use SupportsDependentFields;
+
     public $component = 'nova-phone-field';
 
     public function withCustomFormats(string|array ...$customFormats): self
@@ -27,6 +32,13 @@ class PhoneNumber extends Field
     {
         return $this->withMeta([
             'onlyCustomFormats' => true,
+        ]);
+    }
+
+    public function copyable(): self
+    {
+        return $this->withMeta([
+            'copyable' => true,
         ]);
     }
 }

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace YieldStudio\NovaPhoneField;
 
 use Illuminate\Support\ServiceProvider;
@@ -11,7 +13,7 @@ class FieldServiceProvider extends ServiceProvider
     public function boot(): void
     {
         Nova::serving(function (ServingNova $event) {
-            Nova::script('nova-phone-field', __DIR__ . '/../dist/js/field.js');
+            Nova::script('nova-phone-field', __DIR__.'/../dist/js/field.js');
         });
     }
 }

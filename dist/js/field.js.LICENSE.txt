@@ -1,56 +1,16 @@
 /*!
- * vuex v4.0.2
- * (c) 2021 Evan You
- * @license MIT
+ * dist/inputmask
+ * https://github.com/RobinHerbots/Inputmask
+ * Copyright (c) 2010 - 2023 Robin Herbots
+ * Licensed under the MIT license
+ * Version: 5.0.8
  */
 
 /*!
-* dependencyLibs/inputmask.dependencyLib.js
-* https://github.com/RobinHerbots/Inputmask
-* Copyright (c) 2010 - 2019 Robin Herbots
-* Licensed under the MIT license (http://www.opensource.org/licenses/mit-license.php)
-* Version: 4.0.9
-*/
-
-/*!
-* global/window.js
-* https://github.com/RobinHerbots/Inputmask
-* Copyright (c) 2010 - 2019 Robin Herbots
-* Licensed under the MIT license (http://www.opensource.org/licenses/mit-license.php)
-* Version: 4.0.9
-*/
-
-/*!
-* inputmask.date.extensions.js
-* https://github.com/RobinHerbots/Inputmask
-* Copyright (c) 2010 - 2019 Robin Herbots
-* Licensed under the MIT license (http://www.opensource.org/licenses/mit-license.php)
-* Version: 4.0.9
-*/
-
-/*!
-* inputmask.extensions.js
-* https://github.com/RobinHerbots/Inputmask
-* Copyright (c) 2010 - 2019 Robin Herbots
-* Licensed under the MIT license (http://www.opensource.org/licenses/mit-license.php)
-* Version: 4.0.9
-*/
-
-/*!
-* inputmask.js
-* https://github.com/RobinHerbots/Inputmask
-* Copyright (c) 2010 - 2019 Robin Herbots
-* Licensed under the MIT license (http://www.opensource.org/licenses/mit-license.php)
-* Version: 4.0.9
-*/
-
-/*!
-* inputmask.numeric.extensions.js
-* https://github.com/RobinHerbots/Inputmask
-* Copyright (c) 2010 - 2019 Robin Herbots
-* Licensed under the MIT license (http://www.opensource.org/licenses/mit-license.php)
-* Version: 4.0.9
-*/
+ * vuex v4.1.0
+ * (c) 2022 Evan You
+ * @license MIT
+ */
 
 /**
  * @license

@@ -79,6 +79,18 @@ PhoneNumber::make('Phone Number')
     ->onlyCustomFormats(),
 ```
 
+## Migrate from 1.0.x
+
+In 2.0 values are now stored in [E.164 format](https://en.wikipedia.org/wiki/E.164). Previously, the formatted value was stored, which later caused problems for usage.
+
+With the E.164 format, you can use the phone number directly. We use [libphonenumber-js](https://www.npmjs.com/package/libphonenumber-js) to format it on the Index and Detail of your resources.
+
+To replace previously saved values you can use this query :
+
+```sql
+UPDATE _table_ SET _field_=CONCAT('+', REGEXP_REPLACE(_field_, '\\D', ''))
+``` 
+
 ## Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.

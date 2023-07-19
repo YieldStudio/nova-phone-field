@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace YieldStudio\NovaPhoneField;
 
 use Illuminate\Support\Arr;

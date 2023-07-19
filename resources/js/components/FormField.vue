@@ -1,5 +1,10 @@
 <template>
-    <DefaultField :field="field" :errors="errors">
+    <DefaultField
+        :field="field"
+        :errors="errors"
+        :show-help-text="showHelpText"
+        :full-width-content="fullWidthContent"
+    >
         <template #field>
             <input
                 :id="field.name"
@@ -17,8 +22,8 @@
 <script>
 import PhoneMasks from '../data/phone-masks.json';
 import Inputmask from 'inputmask';
-import { FormField, HandlesValidationErrors } from 'laravel-nova';
-import { map, filter } from 'lodash';
+import {FormField, HandlesValidationErrors} from 'laravel-nova';
+import {map, filter} from 'lodash';
 
 export default {
     mixins: [FormField, HandlesValidationErrors],
@@ -44,7 +49,11 @@ export default {
 
         this.setCustomMasks();
 
-        Inputmask(this.availableMasks).mask(this.$refs.input);
+        Inputmask({
+            mask: this.availableMasks,
+            keepStatic: false,
+            jitMasking: true,
+        }).mask(this.$refs.input);
     },
     methods: {
         setInitialValue() {
@@ -70,11 +79,15 @@ export default {
         formatToInputmask(value) {
             return value ? value.replace(/9/gi, '\\9').replace(/#/gi, '9') : '';
         },
+        unmask(value) {
+            const unmasked = value.replace(/\D/g, '');
+            return value ? `+${unmasked}` : '';
+        },
         fill(formData) {
-            formData.append(this.field.attribute, this.value || '');
+            formData.append(this.field.attribute, this.unmask(this.value));
         },
         handleChange(value) {
-            this.value = value;
+            this.value = this.unmask(value);
         },
     },
 };

@@ -15,15 +15,15 @@
 </template>
 
 <script>
-import {CopiesToClipboard, FieldValue} from 'laravel-nova'
-import parsePhoneNumber from "libphonenumber-js";
+import { CopiesToClipboard, FieldValue } from 'laravel-nova';
+import parsePhoneNumber from 'libphonenumber-js';
 
 export default {
     mixins: [CopiesToClipboard, FieldValue],
     props: ['resourceName', 'field'],
     computed: {
-        phoneNumber(){
-            if(this.field.value){
+        phoneNumber() {
+            if (this.field.value) {
                 try {
                     return parsePhoneNumber(this.field.value);
                 } catch (e) {
@@ -34,18 +34,18 @@ export default {
             return null;
         },
         formatted() {
-            return this.phoneNumber?.formatInternational() ?? '';
+            return this.phoneNumber ? this.phoneNumber.formatInternational() : '';
         },
-        e164(){
-            return this.phoneNumber?.format('E.164') ?? '';
+        e164() {
+            return this.phoneNumber ? this.phoneNumber.format('E.164') : '';
         },
-        link(){
-            return this.phoneNumber?.getURI() ?? '';
-        }
+        link() {
+            return this.phoneNumber ? this.phoneNumber.getURI() : '';
+        },
     },
     methods: {
         copy() {
-            this.copyValueToClipboard(this.e164)
+            this.copyValueToClipboard(this.e164);
         },
     },
 };

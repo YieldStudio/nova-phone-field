@@ -22,8 +22,8 @@
 <script>
 import PhoneMasks from '../data/phone-masks.json';
 import Inputmask from 'inputmask';
-import {FormField, HandlesValidationErrors} from 'laravel-nova';
-import {map, filter} from 'lodash';
+import { FormField, HandlesValidationErrors } from 'laravel-nova';
+import { map, filter } from 'lodash';
 
 export default {
     mixins: [FormField, HandlesValidationErrors],

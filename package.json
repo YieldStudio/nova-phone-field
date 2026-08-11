@@ -21,7 +21,7 @@
         "laravel-mix": "^6.0.41",
         "lodash": "^4.17.21",
         "path": "^0.12.7",
-        "postcss": "^8.3.11",
+        "postcss": "^8.5.26",
         "prettier": "^1.14.2",
         "vue-loader": "^16.8.3"
     },
